@@ -11,6 +11,13 @@
 body {
   background-color: var(--white-color);
   color: var(--main-text-color);
+
+  font-family: Open Sans, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: Raleway, sans-serif;
 }
 
 ul {
@@ -25,6 +32,11 @@ a {
 
 .site-nav .link {
   color: var(--white-color);
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
 }
 
 .site-nav .link:hover,
@@ -34,6 +46,12 @@ a {
 
 .auth-nav .link {
   color: var(--white-color);
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .auth-nav .link:hover,
@@ -43,6 +61,11 @@ a {
 
 .social-links .link {
   color: var(--main-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
 }
 
 .social-links .link:hover,
@@ -54,6 +77,12 @@ a {
 
 .button {
   background-color: transparent;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
 .button.prymery {
@@ -74,23 +103,62 @@ a {
 
 .hero-subtitle {
   color: var(--grey-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .hero-title {
   color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
 }
 
-.her-text {
+.hero-text {
   color: var(--grey-text-color);
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 
 /* Section */
 
+.section-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
 .section-text {
   color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 
 /* About */
+
+.section-text.about {
+  font-size: 14px;
+  line-height: 1.86;
+}
 
 /* Price */
 
@@ -98,7 +166,7 @@ a {
   background-color: var(--dark-bcg-color);
 }
 
-.section-text.invers {
+.section-subtitle.grey {
   color: var(--grey-text-color);
 }
 
@@ -106,14 +174,31 @@ a {
   color: var(--white-color);
 }
 
-td {
+table {
   color: var(--grey-text-color);
 }
 
 /* Features */
 
+.features-list .amount {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
 .features-list .plus {
   color: var(--accent);
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+}
+
+.features-list .text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 }
 
 /* Team */
@@ -122,8 +207,18 @@ td {
   background-color: var(--grey-bcg-color);
 }
 
+.card .card-title {
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
 .card .card-text {
   color: var(--accent);
+
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
 }
 
 /* Gallery */
@@ -141,17 +236,38 @@ td {
   background-color: var(--dark-bcg-color);
 }
 
+.contacts .text {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
 .tel,
 .mail {
   color: var(--grey-text-color);
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 
 .mail {
   text-decoration: underline;
 }
 
+.section-subtitle.white {
+  color: var(--white-color);
+}
+
 /* Footer */
 
 footer p {
   color: var(--grey-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
 }
