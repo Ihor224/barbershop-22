@@ -21,11 +21,27 @@ h2 {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 55px;
+  margin: 0 auto;
+
+  outline: 1px solid tomato;
+}
+
+/* Header */
+
+header {
+  background-color: #9da4bd;
 }
 
 /* Site-nav */
@@ -76,6 +92,13 @@ a {
 /* Button */
 
 .button {
+  display: inline-block;
+  min-width: 160px;
+  height: 40px;
+  padding: 12px 20px;
+  border: 1px solid var(--accent);
+  border-radius: 25px;
+
   background-color: transparent;
 
   font-weight: 600;
@@ -102,6 +125,9 @@ a {
 /* Hero */
 
 .hero-subtitle {
+  margin-top: 192px;
+  margin-bottom: 0;
+
   color: var(--grey-text-color);
 
   font-weight: 600;
@@ -112,6 +138,9 @@ a {
 }
 
 .hero-title {
+  margin-top: 20px;
+  margin-bottom: 0;
+
   color: var(--white-color);
 
   font-weight: 700;
@@ -121,6 +150,9 @@ a {
 }
 
 .hero-text {
+  margin-top: 20px;
+  margin-bottom: 206px;
+
   color: var(--grey-text-color);
 
   font-size: 18px;
@@ -130,7 +162,15 @@ a {
 
 /* Section */
 
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -139,6 +179,9 @@ a {
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
@@ -146,6 +189,9 @@ a {
 }
 
 .section-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   color: var(--secondary-text-color);
 
   font-size: 18px;
@@ -156,6 +202,9 @@ a {
 /* About */
 
 .section-text.about {
+  margin-top: 0;
+  margin-bottom: 40px;
+
   font-size: 14px;
   line-height: 1.86;
 }
@@ -176,18 +225,27 @@ a {
 
 table {
   color: var(--grey-text-color);
+  margin-bottom: 50px;
+}
+
+.indent {
+  margin-bottom: 44px;
 }
 
 /* Features */
 
 .features-list .amount {
+  margin-top: 0;
+  margin-bottom: 6px;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
 }
 
-.features-list .plus {
+sup {
+  vertical-align: super;
   color: var(--accent);
 
   font-weight: 600;
@@ -196,24 +254,43 @@ table {
 }
 
 .features-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
 }
 
-/* Team */
+.features-list .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  padding: 20px;
+  width: 170px;
+  height: 133px;
+  background-color: var(--grey-bcg-color);
+}
+
+/* Masters */
 
 .masters {
   background-color: var(--grey-bcg-color);
 }
 
 .card .card-title {
+  margin-top: 30px;
+  margin-bottom: 8px;
+
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
 }
 
 .card .card-text {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--accent);
 
   font-size: 14px;
@@ -237,6 +314,9 @@ table {
 }
 
 .contacts .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-style: normal;
   font-size: 18px;
   line-height: 1.67;
@@ -258,12 +338,21 @@ table {
 }
 
 .section-subtitle.white {
+  margin-top: 70px;
+  margin-bottom: 20px;
   color: var(--white-color);
 }
 
 /* Footer */
 
+footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
 footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--grey-text-color);
 
   font-weight: 600;
