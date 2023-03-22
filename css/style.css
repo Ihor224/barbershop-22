@@ -44,11 +44,30 @@ header {
   background-color: #9da4bd;
 }
 
+/* Main-nav */
+
+.main-nav {
+  display: flex;
+  align-items: baseline;
+}
+
 /* Site-nav */
 
-.site-nav .link {
-  color: var(--white-color);
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
 
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: var(--white-color);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -58,6 +77,18 @@ header {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent);
+}
+
+/* Auth-nav */
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-nav .item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .auth-nav .link {
