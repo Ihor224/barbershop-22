@@ -155,8 +155,12 @@ header {
 
 /* Hero */
 
+.hero {
+  background-color: teal;
+}
+
 .hero-subtitle {
-  margin-top: 192px;
+  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--grey-text-color);
@@ -182,7 +186,7 @@ header {
 
 .hero-text {
   margin-top: 20px;
-  margin-bottom: 206px;
+  margin-bottom: 0;
 
   color: var(--grey-text-color);
 
@@ -232,12 +236,28 @@ header {
 
 /* About */
 
+.about-list {
+  display: flex;
+}
+
+.about-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.text-content {
+  margin-left: 64px;
+}
+
 .section-text.about {
   margin-top: 0;
   margin-bottom: 40px;
 
   font-size: 14px;
   line-height: 1.86;
+}
+
+#about .container {
+  display: flex;
 }
 
 /* Price */
@@ -255,6 +275,7 @@ header {
 }
 
 table {
+  width: 585px;
   color: var(--grey-text-color);
   margin-bottom: 50px;
 }
@@ -263,7 +284,30 @@ table {
   margin-bottom: 44px;
 }
 
+.price-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Features */
+
+.container.features {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  margin-left: 130px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 .features-list .amount {
   margin-top: 0;
@@ -304,10 +348,31 @@ sup {
   background-color: var(--grey-bcg-color);
 }
 
-/* Masters */
+.features-list .item:nth-child(2n) {
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
 
+/* Masters */
 .masters {
   background-color: var(--grey-bcg-color);
+}
+
+.masters-list {
+  display: flex;
+}
+
+.masters-list .card {
+  margin-right: 30px;
+}
+
+.masters-list .card:nth-last-child() {
+  margin-right: 0;
+}
+
+.card img {
+  display: block;
 }
 
 .card .card-title {
@@ -317,6 +382,8 @@ sup {
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
+
+  text-align: center;
 }
 
 .card .card-text {
@@ -327,11 +394,33 @@ sup {
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.02em;
+
+  text-align: center;
 }
 
 /* Gallery */
 
+.gallery-list {
+  display: flex;
+}
+
+.gallery-list .item {
+  margin-right: 30px;
+}
+
+.gallery-list .item:last-child {
+  margin-right: 0;
+}
+
+.gallery-list .item img {
+  display: block;
+}
+
 /* Online-entry */
+
+.container.feedback {
+  display: flex;
+}
 
 .entry {
   background-color: var(--dark-bcg-color);
